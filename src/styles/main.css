@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    html {
+        @apply scroll-smooth
+    }
+    body {
+        @apply bg-backgroundColor font-primary text-[22px] text-textColor
+    }
+
+    #about,
+    #work,
+    #contact {
+        @apply scroll-mt-[100px]
+    }
+}
+
+a {
+    @apply text-lg text-textColor font-medium hover:text-textColor-secondary/75 transition-all duration-300 ease-in-out
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-primary text-textColor
+}
+
+.h1 {
+    @apply text-[64px] lg:text-[84px] leading-none;
+}
+
+.h2 {
+    @apply text-[50px] leading-tight;
+}
+
+.h3 {
+    @apply text-[25px]
+}
+
+.btn {
+    @apply text-sm font-bold py-[10px] px-[30px] transition-all duration-300 rounded-3xl flex items-center gap-2
+}
+
+.btn-small {
+    @apply text-xs font-semibold py-1.5 px-8 transition-all duration-300 rounded-2xl flex items-center gap-2 text-textColor
+}
+
+.btn-primary {
+    @apply bg-primary hover:bg-accent-secondary text-backgroundColor
+}
+
+.btn-secondary {
+    @apply bg-primary-200 hover:bg-primary-200/70
+}
+
+/* .btn-primary {
+    @apply bg-primary hover:bg-primary-200 text-backgroundColor-200 hover:text-textColor
+}
+
+.btn-secondary {
+    @apply bg-accent-secondary hover:bg-accent text-backgroundColor-200 hover:text-textColor
+} */
+
+
+.nav-is-open {
+    @apply h-auto p-6
+}
+
+.skills-logo {
+    @apply w-16 h-auto
+}
