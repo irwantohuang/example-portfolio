@@ -1,19 +1,19 @@
 <template>
     <div class="w-full lg:w-1/2">
         <form action="#">
-            <div class="form w-full">
+            <div class="sr_contact__form form w-full">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name">
             </div>
-            <div class="form w-full">
+            <div class="sr_contact__form form w-full">
                 <label for="name">Email</label>
                 <input type="email" name="email" id="email">
             </div>
-            <div class="form w-full">
+            <div class="sr_contact__form form w-full">
                 <label for="name">Message</label>
                 <textarea name="message" id="message" class="h-32"></textarea>
             </div>
-            <div class="w-full">
+            <div class="sr_contact__form w-full">
                 <button class="btn btn-primary w-full justify-center">Submit</button>
             </div>
         </form>

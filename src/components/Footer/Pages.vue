@@ -5,10 +5,10 @@ import { pages } from '../../data/footer'
 <template>
 
     <div class="flex flex-col items-start gap-4 lg:order-0">
-        <h3 class="text-backgroundColor font-bold h3">Pages</h3>
+        <h3 class="sr_footer__title text-backgroundColor font-bold h3">Pages</h3>
         <ul>
-            <li v-for="data in pages" class="">
-                <a class="text-backgroundColor-200 hover:text-backgroundColor-300/50" href="">
+            <li v-for="data in pages" class="sr_footer__content">
+                <a class=" text-backgroundColor-200 hover:text-backgroundColor-300/50" href="">
                     <fa-icon :icon="data.icon" />
                     <span class="ms-4">{{ data.title }}</span>
                 </a>

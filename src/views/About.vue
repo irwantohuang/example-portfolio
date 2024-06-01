@@ -27,14 +27,14 @@ const checkActive = (e) => {
 
 <template>
 
-    <section id="about" class="mt-[80px] xl:mt-[200px] relative z-20">
+    <section id="about" class="mt-[80px] xl:mt-[150px] relative z-20">
         <div class="container mx-auto lg:flex lg:flex-col lg:items-center">
-            <h3 class="h3 font-secondary font-bold text-accent text-center mb-4">
+            <h3 class="sr_about__title h3 font-secondary font-bold text-accent text-center mb-4">
                 about me
             </h3>
 
             <div
-                class="flex flex-col justify-center items-start gap-4 bg-backgroundColor-200 px-4 pt-6 py-10 rounded-xl lg:max-w-5xl">
+                class="sr_about__content flex flex-col justify-center items-start gap-4 bg-backgroundColor-200 px-4 pt-6 py-10 rounded-xl lg:max-w-5xl">
                 <div class="flex justify-center gap-2">
                     <template v-for="(data, index) in about" :key="index">
                         <button @click="toggleView(data)" class="btn-small"

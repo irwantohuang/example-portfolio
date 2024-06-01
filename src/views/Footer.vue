@@ -15,7 +15,7 @@ import Contact from '../components/Footer/Contact.vue';
             </div>
 
             <div class="border-t py-8 mt-16">
-                <p class="text-sm md:text-base text-center font-semibold">Copyright &copy; Irwanto Huang 2024. All rights reserved</p>
+                <p class="sr_footer text-sm md:text-base text-center font-semibold">Copyright &copy; Irwanto Huang 2024. All rights reserved</p>
             </div>
         </div>
     </section>

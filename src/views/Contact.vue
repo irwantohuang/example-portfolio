@@ -7,14 +7,12 @@ import ContactDetail from '../components/Contact/ContactDetail.vue'
     <section id="contact" class="mt-[80px] xl:mt-[200px] relative z-20">
         <div class="container mx-auto">
             <div class="flex flex-col items-center">
-                <h3 class="h3 font-secondary font-bold text-accent text-center mb-4">
+                <h3 class="sr_contact__title h3 font-secondary font-bold text-accent text-center mb-4">
                 contact
             </h3>
 
-            <h2 class="h2 text-center text-textColor-secondary font-semibold">Get in Touch!</h2>
+            <h2 class="sr_contact__subtitle h2 text-center text-textColor-secondary font-semibold">Get in Touch!</h2>
             </div>
-
-
 
             <div class="flex flex-col lg:flex-row mt-10 gap-12">
                 <ContactDetail />
