@@ -19,12 +19,12 @@ const breakpoints = ref(
 
 <template>
 
-    <section class="mt-[80px] xl:mt-[200px] relative z-20 bg-backgroundColor-300 py-[100px]">
+    <section class="mt-[80px] xl:mt-[200px] relative z-20 bg-backgroundColor-300 dark:bg-backgroundColor-300/30 py-[100px]">
         <div class="container mx-auto lg:p-0">
 
             <div class="text-center mb-12">
-                <h3 class="sr_client__title 3 font-secondary font-bold text-primary text-center mb-2 lowercase">What Clients Say</h3>
-                <h2 class="sr_client__subtitle h2 mt-2 font-semibold text-textColor-secondary max-w-xl mx-auto leading-none">Discover why
+                <h3 class="sr_client__title 3 font-secondary font-bold text-primary text-center mb-2 lowercase dark:text-accent">What Clients Say</h3>
+                <h2 class="sr_client__subtitle h2 mt-2 font-semibold text-textColor-secondary max-w-xl mx-auto leading-none dark:text-backgroundColor-200">Discover why
                     our clients love working with us</h2>
             </div>
             <div>
@@ -32,17 +32,17 @@ const breakpoints = ref(
                     class="mySwiper h-[300px]">
 
                     <swiper-slide v-for="(data, index) in clients" :key="index">
-                        <div class="sr_client__content bg-backgroundColor shadow-md h-[250px] flex flex-col py-4 px-6 rounded-2xl">
-                            <div class="flex gap-6 border-b border-b-black pb-4">
+                        <div class="sr_client__content bg-backgroundColor shadow-md h-[250px] flex flex-col py-4 px-6 rounded-2xl dark:bg-textColor">
+                            <div class="flex gap-6 border-b border-b-black pb-4 dark:border-b-backgroundColor-200">
                                 <div class="w-[75px] h-[75px] rounded-full overflow-hidden">
                                     <img :src="data.profile" alt="">
                                 </div>
                                 <div class="flex flex-col items-start">
-                                    <h3 class="h3 font-semibold text-primary">{{ data.name }}</h3>
-                                    <p class="text-sm font-bold uppercase text-primary/50">{{ data.title }}</p>
+                                    <h3 class="h3 font-semibold text-primary dark:text-primary-200">{{ data.name }}</h3>
+                                    <p class="text-sm font-bold uppercase text-primary/50 dark:text-backgroundColor-300">{{ data.title }}</p>
                                 </div>
                             </div>
-                            <p class="text-base font-normal text-textColor-secondary mt-8">{{ data.description }}</p>
+                            <p class="text-base font-normal text-textColor-secondary mt-8 dark:text-backgroundColor-300">{{ data.description }}</p>
                         </div>
                     </swiper-slide>
                 </swiper>

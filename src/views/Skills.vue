@@ -6,7 +6,7 @@
 
     <section class="mt-[80px] xl:mt-[200px] relative z-20 bg-textColor py-[120px]">
         <div class="container mx-auto">
-            <h3 class="sr_skill__title h3 font-secondary font-bold text-accent text-center mb-2">
+            <h3 class="sr_skill__title h3 font-secondary font-bold text-accent dark:text-accent text-center mb-2">
                 skills  
             </h3>
 

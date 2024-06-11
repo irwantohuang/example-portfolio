@@ -29,12 +29,12 @@ const checkActive = (e) => {
 
     <section id="about" class="mt-[80px] xl:mt-[150px] relative z-20">
         <div class="container mx-auto lg:flex lg:flex-col lg:items-center">
-            <h3 class="sr_about__title h3 font-secondary font-bold text-accent text-center mb-4">
+            <h3 class="sr_about__title h3 font-secondary font-bold text-accent text-center mb-4 dark:text-accent">
                 about me
             </h3>
 
             <div
-                class="sr_about__content flex flex-col justify-center items-start gap-4 bg-backgroundColor-200 px-4 pt-6 py-10 rounded-xl lg:max-w-5xl">
+                class="sr_about__content flex flex-col justify-center items-start gap-4 dark:bg-textColor-secondary bg-backgroundColor-200 px-4 pt-6 py-10 rounded-xl lg:max-w-5xl">
                 <div class="flex justify-center gap-2">
                     <template v-for="(data, index) in about" :key="index">
                         <button @click="toggleView(data)" class="btn-small"
@@ -44,10 +44,10 @@ const checkActive = (e) => {
                     </template>
                 </div>
 
-                <div class="text pt-4 border-t-2 border-t-textColor-secondary/50">
+                <div class="text pt-4 border-t-2 border-t-textColor-secondary/50 dark:border-t-backgroundColor-300">
                     <template v-for="(data, index) in aboutData" :key="index">
                         <div v-if="viewActive == data.title">
-                            <h5 class="text-[20px] font-secondary font-medium text-primary mb-1">
+                            <h5 class="text-[20px] font-secondary font-medium text-primary dark:text-accent mb-1">
                                 My {{ data.title }}
                             </h5>
                             <p class="text-base text-justify lg:text-lg">

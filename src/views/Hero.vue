@@ -3,8 +3,8 @@
 
 <template>
     <section id="hero" class="h-[640px] w-full relative z-10">
-        <div class="absolute inset-0 z-20 bg-hero opacity-5"></div>
-        <div class="absolute inset-0 z-10 bg-gradient-to-t to-primary-300 from-white"></div>
+        <div class="absolute inset-0 z-20 bg-hero dark:bg-hero-dark opacity-5"></div>
+        <div class="absolute inset-0 z-10 bg-gradient-to-t to-primary-300 from-white dark:from-backgroundColor-dark"></div>
 
             <div class="relative z-30 container mx-auto flex h-full flex-col items-center lg:flex-row lg:justify-between py-[75px]">
                 <div class="lg:order-2 w-[450px] h-full flex items-center justify-center">
@@ -18,15 +18,15 @@
                 </div>
 
                 <div class="sr_hero__text order-none lg:order-1 flex-1 text-center lg:text-start">
-                    <h3 class="h3 font-secondary font-semibold text-primary">hi everyone!</h3>
-                    <h2 class="h3 font-bold">
+                    <h3 class="h3 font-secondary font-semibold text-primary dark:text-accent">hi everyone!</h3>
+                    <h2 class="h3 font-bold dark:text-backgroundColor/75">
                         I'am    
                         <a href="#" class="h2 font-bold">Irwanto Huang</a>
                     </h2>
-                    <p class="text-base capitalize text-textColor/65 mb-4">Front-End Web Developer | bringing your
+                    <p class="text-base capitalize text-textColor/65 mb-4 dark:text-backgroundColor-300">Front-End Web Developer | bringing your
                         vision to digital life</p>
 
-                    <p class="text-sm text-textColor/85">I specialize in creating dynamic, responsive, and user-friendly
+                    <p class="text-sm text-textColor/85 dark:text-backgroundColor-200">I specialize in creating dynamic, responsive, and user-friendly
                         websites. Let's build something amazing together 🚀</p>
 
                     <!-- Call to Action Button -->

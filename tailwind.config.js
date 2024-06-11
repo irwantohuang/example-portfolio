@@ -4,6 +4,7 @@ export default {
         "./index.html",
         "./src/**/*.{vue,js,ts,jsx,tsx}",
     ],
+    darkMode: 'class',
     theme: {
         container: {
             padding: {
@@ -16,7 +17,8 @@ export default {
         },
         extend: {
             backgroundImage: {
-                'hero': "url('./src/assets/hero.svg')"
+                'hero': "url('./src/assets/hero.svg')",
+                'hero-dark': "url('./src/assets/hero-dark.svg')"
             },
             colors: {
                 primary: {
@@ -34,6 +36,7 @@ export default {
                 },
                 backgroundColor: {
                     DEFAULT: '#FFFFFF',
+                    'dark': '#1E1E1E',
                     '200': '#f5f5f5',
                     '300': '#cccccc'
                 }
@@ -42,27 +45,3 @@ export default {
     },
     plugins: [],
 }
-
-// --primary-100:#0077C2;
-// --primary-200:#59a5f5;
-// --primary-300:#c8ffff;
-// --accent-100:#00BFFF;
-// --accent-200:#00619a;
-// --text-100:#333333;
-// --text-200:#5c5c5c;
-// --bg-100:#FFFFFF;
-// --bg-200:#f5f5f5;
-// --bg-300:#cccccc;
-  
-
-
-// --primary-100:#d4eaf7;
-// --primary-200:#b6ccd8;
-// --primary-300:#3b3c3d;
-// --accent-100:#71c4ef;
-// --accent-200:#00668c;
-// --text-100:#1d1c1c;
-// --text-200:#313d44;
-// --bg-100:#fffefb;
-// --bg-200:#f5f4f1;
-// --bg-300:#cccbc8;
