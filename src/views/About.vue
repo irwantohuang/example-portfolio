@@ -29,11 +29,11 @@ const checkActive = (e) => {
 
     <section id="about" class="mt-[80px] xl:mt-[150px] relative z-20">
         <div class="container mx-auto lg:flex lg:flex-col lg:items-center">
-            <h3 class="sr_about__title h3 font-secondary font-bold text-accent text-center mb-4 dark:text-accent">
+            <h3 v-scroll-reveal="{distance: 0, origin: 'none', scale: 0.8}" class="sr_about__title h3 font-secondary font-bold text-accent text-center mb-4 dark:text-accent">
                 about me
             </h3>
 
-            <div
+            <div v-scroll-reveal="{distance: 0, origin: 'none', scale: 0.8, opacity: 0, delay: 1000, duration: 2000}"
                 class="sr_about__content flex flex-col justify-center items-start gap-4 dark:bg-textColor-secondary bg-backgroundColor-200 px-4 pt-6 py-10 rounded-xl lg:max-w-5xl">
                 <div class="flex justify-center gap-2">
                     <template v-for="(data, index) in about" :key="index">

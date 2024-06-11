@@ -8,7 +8,7 @@
 
             <div class="relative z-30 container mx-auto flex h-full flex-col items-center lg:flex-row lg:justify-between py-[75px]">
                 <div class="lg:order-2 w-[450px] h-full flex items-center justify-center">
-                    <div class="sr_hero__img p-4 rounded-full border-b-8 border-l-4 border-r-4 border-solid border-primary mb-3">
+                    <div v-scroll-reveal="{origin: 'right'}" class="sr_hero__img p-4 rounded-full border-b-8 border-l-4 border-r-4 border-solid border-primary mb-3">
                         <div
                             class="lg:order-2 overflow-hidden h-[200px] lg:h-[300px] w-[200px] lg:w-[300px] rounded-full border-t-8 border-accent-secondary border-r-4 border-l-4 flex items-center justify-center text-white">
                             <img src="../assets/profile2.jpeg" alt="">
@@ -17,7 +17,7 @@
                     </div>
                 </div>
 
-                <div class="sr_hero__text order-none lg:order-1 flex-1 text-center lg:text-start">
+                <div v-scroll-reveal="{origin: 'left'}" class="sr_hero__text order-none lg:order-1 flex-1 text-center lg:text-start">
                     <h3 class="h3 font-secondary font-semibold text-primary dark:text-accent">hi everyone!</h3>
                     <h2 class="h3 font-bold dark:text-backgroundColor/75">
                         I'am    

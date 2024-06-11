@@ -16,10 +16,10 @@ const toggleView = (e) => viewActive.value = e;
 
     <section id="work" class="mt-[80px] xl:mt-[200px] relative z-20">
         <div class="container mx-auto lg:p-0">
-            <h3 class="sr_portfolio__title h3 font-secondary font-bold text-accent dark:text-accent text-center mb-2">
+            <h3 v-scroll-reveal="{  scale: 0.8, distance: 0, origin: 'none' }" class="sr_portfolio__title h3 font-secondary font-bold text-accent dark:text-accent text-center mb-2">
                 portfolio
             </h3>
-            <h2 class="sr_portfolio__subtitle text-center h2 mt-2 text-textColor-secondary dark:text-backgroundColor-200 font-semibold">Highlights of My Creations</h2>
+            <h2 v-scroll-reveal="{ delay: 1000, distance: '20px', origin: 'top' }" class="sr_portfolio__subtitle text-center h2 mt-2 text-textColor-secondary dark:text-backgroundColor-200 font-semibold">Highlights of My Creations</h2>
 
 
             <div class="border border-textColor-secondary dark:border-backgroundColor-300 rounded-2xl mt-6 py-8 px-6">
@@ -36,7 +36,7 @@ const toggleView = (e) => viewActive.value = e;
                 </div>
 
                 <!-- View Items -->
-                <div class="sr_portfolio__content pt-2 pb-6 px-2 max-h-[500px] overflow-scroll">
+                <div v-scroll-reveal="{ distance: '25px', delay: 200 }" class="sr_portfolio__content pt-2 pb-6 px-2 max-h-[500px] overflow-scroll">
                     <ListPortfolio v-if="viewActive == 'List'" :portfolio="portfolio" />
                     <GridPortfolio v-if="viewActive == 'Grid'" :portfolio="portfolio" />
                 </div>

@@ -3,10 +3,13 @@ import ScrollReveal from "scrollreveal";
 export const defaultOptions = {
     origin: 'bottom',
     distance: '50px',
-    duration: '2000',
+    duration: '1500',
     delay: '500'
 }
 
-export const sr = () => ScrollReveal({
-    ...defaultOptions
-})
+export const scrollReveal = {
+    mounted(el, binding) {
+        const options = {...defaultOptions, ...binding.value}
+        ScrollReveal().reveal(el, options);
+    }
+}

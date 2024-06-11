@@ -7,11 +7,11 @@ import ContactDetail from '../components/Contact/ContactDetail.vue'
     <section id="contact" class="mt-[80px] xl:mt-[200px] relative z-20">
         <div class="container mx-auto">
             <div class="flex flex-col items-center">
-                <h3 class="sr_contact__title h3 font-secondary font-bold text-accent text-center mb-4 dark:text-accent">
+                <h3 v-scroll-reveal="{ scale: 0.8, distance: 0, origin: 'none' }" class="sr_contact__title h3 font-secondary font-bold text-accent text-center mb-4 dark:text-accent">
                 contact
             </h3>
 
-            <h2 class="sr_contact__subtitle h2 text-center text-textColor-secondary font-semibold dark:text-backgroundColor-200">Get in Touch!</h2>
+            <h2 v-scroll-reveal="{ delay: 500, distance: '20px' }" class="sr_contact__subtitle h2 text-center text-textColor-secondary font-semibold dark:text-backgroundColor-200">Get in Touch!</h2>
             </div>
 
             <div class="flex flex-col lg:flex-row mt-10 gap-12">

@@ -4,7 +4,7 @@ import { contact } from '../../data/contact'
 
 <template>
     <div class="w-full lg:w-1/2">
-        <p class="sr_contact__detail_text text-base text-justify dark:text-backgroundColor-200">
+        <p v-scroll-reveal="{ delay: 1000, distance: '20px' }" class="sr_contact__detail_text text-base text-justify dark:text-backgroundColor-200">
             I'd love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to
             reach out. You can contact me through any of the following methods, and I’ll get back to you as soon as
             possible.
@@ -12,7 +12,7 @@ import { contact } from '../../data/contact'
 
 
         <template v-for="(data, index) in contact" :key="index">
-            <div class="sr_contact__content flex items-start gap-2 mt-6 mb-4">
+            <div v-scroll-reveal="{ delay: 200, interval: 150, origin: 'left' }" class="sr_contact__content flex items-start gap-2 mt-6 mb-4">
                 <div class="min-w-[50px] min-h-[50px] bg-primary text-backgroundColor-200 text-3xl rounded-md flex items-center justify-center">
                     <fa-icon :icon="data.icon" />
                 </div>
