@@ -14,10 +14,11 @@ import { socialMedia } from '../../data/socialMedia';
             </div>
         </div>
         <div class="flex gap-6">
-            <a href="#"
+            <a 
                 v-scroll-reveal="{ delay: 1000, origin: 'right', interval: 150, distance: '25px' }"
                 class="sr_footer__profile_social w-12 h-12 rounded-full shadow-md flex items-center justify-center hover:border-none text-backgroundColor hover:text-backgroundColor-200 transition-alld duration-300 text-3xl"
-                :class="data.hover" v-for="data in socialMedia">
+                :class="data.hover" v-for="data in socialMedia"
+                :href="data.link" target="_blank">
                 <fa-icon :icon="data.icon" />
             </a>
         </div>
