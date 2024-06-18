@@ -17,8 +17,8 @@ export default {
         },
         extend: {
             backgroundImage: {
-                'hero': "url('./src/assets/hero.svg')",
-                'hero-dark': "url('./src/assets/hero-dark.svg')"
+                'hero': "url('/src/assets/hero.svg')",
+                'hero-dark': "url('/src/assets/hero-dark.svg')"
             },
             colors: {
                 primary: {
