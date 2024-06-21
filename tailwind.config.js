@@ -41,7 +41,10 @@ export default {
                     '200': '#f5f5f5',
                     '300': '#cccccc'
                 }
-            }
+            },
+            screens: {
+                '2xl': '1320px'
+              },
         },
     },
     plugins: [],

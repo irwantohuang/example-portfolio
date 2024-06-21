@@ -50,21 +50,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-    @apply bg-primary hover:bg-accent-secondary text-backgroundColor !important
+    @apply bg-primary hover:bg-accent-secondary text-backgroundColor
 }
 
 .btn-secondary {
     @apply bg-primary-200 hover:bg-primary-200/70 text-backgroundColor
 }
-
-/* .btn-primary {
-    @apply bg-primary hover:bg-primary-200 text-backgroundColor-200 hover:text-textColor
-}
-
-.btn-secondary {
-    @apply bg-accent-secondary hover:bg-accent text-backgroundColor-200 hover:text-textColor
-} */
-
 
 .nav-is-open {
     @apply h-auto p-6
