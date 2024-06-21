@@ -12,7 +12,7 @@ import { contact } from '../../data/footer'
                     <fa-icon :icon="data.icon" class="me-2"/>
                     {{ data.title }}
                 </p>
-                <a href="" class="text-backgroundColor-300 hover:text-backgroundColor-200">
+                <a disabled class="text-backgroundColor-300 hover:text-backgroundColor-200">
                     {{ data.value }}
                 </a>
             </li>

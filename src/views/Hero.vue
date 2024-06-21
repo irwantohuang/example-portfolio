@@ -1,4 +1,7 @@
 <script setup>
+
+const navigate = (e) => window.location.href = e;
+
 </script>
 
 <template>
@@ -31,8 +34,8 @@
 
                     <!-- Call to Action Button -->
                     <div class="flex gap-3 mt-4 flex-col items-center lg:flex-row">
-                        <button class="btn btn-primary">Explore My Work</button>
-                        <button class="btn btn-secondary">Get in Touch</button>
+                        <button @click="navigate('#work')" class="btn btn-primary">Explore My Work</button>
+                        <button @click="navigate('#contact')" class="btn btn-secondary">Get in Touch</button>
                     </div>
                 </div>
             </div>

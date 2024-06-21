@@ -20,7 +20,7 @@ import { contact } from '../../data/contact'
                 <div class=" flex flex-col">
                     <p class="text-lg font-semibold text-textColor-secondary dark:text-backgroundColor">
                         {{ data.title }}
-                        <a v-if="data.link" class="text-base text-primary hover:text-accent-secondary dark:text-primary-200 dark:hover:text-primary-200/80" href="">
+                        <a v-if="data.link" class="text-base text-primary hover:text-accent-secondary dark:text-primary-200 dark:hover:text-primary-200/80" disabled>
                             - {{ data.link }}
                         </a>
                         <a class="me-3 ms-1 text-xl text-primary hover:text-accent-secondary dark:text-primary-200 dark:hover:text-primary-200/80 " v-if="data.socialLinks" v-for="icon in data.socialLinks" :key="icon.name" :href="icon.link" target="_blank">

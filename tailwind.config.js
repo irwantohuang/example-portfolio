@@ -8,6 +8,7 @@ export default {
     theme: {
         container: {
             padding: {
+                center: true,
                 DEFAULT: '16px'
             }
         },
