@@ -10,9 +10,9 @@ const props = defineProps({
 <template>
     <div class="flex flex-col gap-4">
     <div v-for="(data, index) in portfolio" :key="index">
-        <div class="flex flex-row gap-2 bg-backgroundColor-200 overflow-hidden rounded-2xl shadow-md hover:scale-[102%] transition-all duration-200 ease-in-out max-h-[200px] lg:max-h-[250px] dark:bg-textColor">
+        <div class="flex flex-row gap-2 bg-backgroundColor-200 overflow-hidden rounded-2xl shadow-md hover:scale-[102%] transition-all duration-200 ease-in-out h-auto dark:bg-textColor">
 
-            <div class="hidden lg:block relative max-w-full lg:max-w-[350px]">
+            <div class="hidden lg:block relative max-w-full lg:max-w-[350px] lg:min-w-[350px]">
                 <img :src="data.image" alt="" class="w-full h-full object-cover object-left-top">
             </div>
 
